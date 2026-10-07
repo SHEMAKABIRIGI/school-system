@@ -1,0 +1,3 @@
+-- MySQL tables for the school system.
+-- Planned tables: users, students, teachers, classes, subjects, marks,
+-- news, gallery, registrations, messages

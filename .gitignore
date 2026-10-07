@@ -1,0 +1,6 @@
+includes/config.php
+uploads/*
+!uploads/news/.gitkeep
+!uploads/gallery/.gitkeep
+vendor/
+.DS_Store
