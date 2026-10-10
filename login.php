@@ -63,15 +63,15 @@ include __DIR__ . '/includes/header.php';
     <?php if ($notice): ?><div class="alert alert-info"><?= e($notice) ?></div><?php endif; ?>
     <?php if ($error):  ?><div class="alert alert-error"><?= e($error) ?></div><?php endif; ?>
 
-    <form method="post" action="login.php" autocomplete="on">
+    <form method="post" action="login.php" autocomplete="off">
       <?= csrf_field() ?>
       <div class="form-group">
         <label for="username">Username</label>
-        <input type="text" id="username" name="username" value="<?= e($username) ?>" required autofocus autocomplete="username">
+        <input type="text" id="username" name="username" value="<?= e($username) ?>" required autocomplete="off" autocapitalize="none" spellcheck="false">
       </div>
       <div class="form-group">
         <label for="password">Password</label>
-        <input type="password" id="password" name="password" required autocomplete="current-password">
+        <input type="password" id="password" name="password" required autocomplete="new-password">
       </div>
       <button class="btn" type="submit">Log in</button>
     </form>
