@@ -1,1 +1,16 @@
-/* Responsive rules for tablets and computers (min-width media queries) */
+/* Tablets and computers */
+@media (min-width: 768px) {
+  .site-header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 0 2rem; }
+  .site-header .bar { padding: 1rem 0; }
+  .menu-btn { display: none; }
+  .nav, .nav.open { display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 1.1rem; padding: 0; }
+  .nav a { border-top: 0; padding: 0; }
+  .nav-sep { display: block; width: 1px; height: 1.1rem; background: rgba(255,255,255,.4); }
+
+  /* staff header: brand and menu on one row, user name below */
+  .staff .site-header { padding: .5rem 2rem; }
+  .user-chip { width: 100%; padding: 0 0 .5rem; }
+
+  main { padding: 2rem; }
+  .grid { grid-template-columns: repeat(4, 1fr); }
+}

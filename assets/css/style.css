@@ -1,1 +1,54 @@
-/* Main styles: colors, fonts, layout, mobile-first */
+/* Main styles: mobile-first. Larger screens are handled in responsive.css */
+:root {
+  --primary: #1f4e79;
+  --primary-dark: #163a5a;
+  --bg: #f5f7fa;
+  --text: #1d2733;
+  --muted: #5b6b7b;
+  --border: #d6dde5;
+  --danger: #b3261e;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.5;
+}
+a { color: var(--primary); }
+h1 { font-size: 1.6rem; margin: 0 0 1rem; }
+h2 { font-size: 1.2rem; margin: 0 0 .75rem; }
+
+/* Header and menu */
+.site-header { background: var(--primary); color: #fff; }
+.site-header .bar { display: flex; align-items: center; justify-content: space-between; padding: .75rem 1rem; }
+.brand { color: #fff; font-weight: 700; font-size: 1.1rem; text-decoration: none; }
+.menu-btn { background: none; color: #fff; border: 1px solid rgba(255,255,255,.6); border-radius: 6px; padding: .4rem .8rem; font-size: 1rem; cursor: pointer; }
+.nav { display: none; flex-direction: column; padding: 0 1rem 1rem; }
+.nav.open { display: flex; }
+.nav a { color: #fff; text-decoration: none; padding: .65rem 0; border-top: 1px solid rgba(255,255,255,.15); }
+.nav a.active { font-weight: 700; }
+.nav-sep { display: none; }
+
+/* Page area */
+main { max-width: 1000px; margin: 0 auto; padding: 1.25rem 1rem; }
+.card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem; }
+.site-footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 1.5rem 1rem; }
+
+/* Forms and buttons */
+.form-group { margin-bottom: 1rem; }
+label { display: block; font-weight: 600; margin-bottom: .3rem; }
+input[type=text], input[type=password], input[type=email] {
+  width: 100%; padding: .7rem; border: 1px solid var(--border); border-radius: 8px; font-size: 1rem;
+}
+input:focus { outline: 2px solid var(--primary); outline-offset: 1px; }
+.btn { display: inline-block; background: var(--primary); color: #fff; border: 0; border-radius: 8px; padding: .7rem 1.3rem; font-size: 1rem; cursor: pointer; text-decoration: none; }
+.btn:hover { background: var(--primary-dark); }
+
+/* Messages */
+.alert { padding: .7rem 1rem; border-radius: 8px; margin-bottom: 1rem; }
+.alert-error { background: #fdecea; color: var(--danger); border: 1px solid #f5c2be; }
+.alert-info { background: #e8f1fb; color: var(--primary); border: 1px solid #c5daf0; }
+
+.login-box { max-width: 420px; margin: 1.5rem auto; }
