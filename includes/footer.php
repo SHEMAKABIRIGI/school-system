@@ -1,5 +1,5 @@
 <footer class="site-footer">
-  <p>&copy; <?= date('Y') ?> <?= e(SITE_NAME) ?></p>
+  <p>&copy; <?= date('Y') ?> <?= e(SITE_NAME) ?>. All rights reserved. | Denys</p>
 </footer>
 <script src="<?= BASE_URL ?>assets/js/main.js"></script>
 </body>

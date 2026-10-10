@@ -21,8 +21,8 @@ $links = [
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= e($pageTitle) ?> - <?= e(SITE_NAME) ?></title>
-  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/style.css">
-  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/responsive.css">
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/style.css?v=<?= filemtime(__DIR__ . '/../assets/css/style.css') ?>">
+  <link rel="stylesheet" href="<?= BASE_URL ?>assets/css/responsive.css?v=<?= filemtime(__DIR__ . '/../assets/css/responsive.css') ?>">
 </head>
 <body>
 <header class="site-header">

@@ -49,19 +49,19 @@ include __DIR__ . '/includes/header.php';
         <span class="home-pillar-number">01</span>
         <h3>Keep curious</h3>
         <p>Ask questions, explore new ideas, and make learning part of every day.</p>
-        <span class="home-pillar-mark" aria-hidden="true">✳</span>
+        <span class="home-pillar-mark" aria-hidden="true">*</span>
       </article>
       <article class="home-pillar">
         <span class="home-pillar-number">02</span>
         <h3>Grow together</h3>
         <p>Build respect, resilience, and a sense of belonging in a caring community.</p>
-        <span class="home-pillar-mark" aria-hidden="true">↗</span>
+        <span class="home-pillar-mark" aria-hidden="true">+</span>
       </article>
       <article class="home-pillar">
         <span class="home-pillar-number">03</span>
         <h3>Look ahead</h3>
         <p>Develop the confidence and foundations to pursue your ambitions.</p>
-        <span class="home-pillar-mark" aria-hidden="true">◎</span>
+        <span class="home-pillar-mark" aria-hidden="true">o</span>
       </article>
     </div>
   </section>
